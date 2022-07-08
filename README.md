@@ -1,2 +1,1 @@
-# byor-greetings-app2
-Ballerina greetings service
+# july-6-repo
