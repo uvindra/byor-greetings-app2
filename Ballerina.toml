@@ -1,9 +1,0 @@
-[build-options]
-  observabilityIncluded = true
-
-[package]
-  distribution = "2201.1.1"
-  name = "automationtestcomponent1657894403952"
-  org = "choreointegrationtestsuserdevdlwqo"
-  version = "0.1.0"
-
