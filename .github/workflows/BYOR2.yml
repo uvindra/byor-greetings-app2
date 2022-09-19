@@ -22,11 +22,11 @@ jobs:
         uses: ballerina-platform/ballerina-action@master
         with:
           args: 
-            new -t service test
+            new -t service test2
 
       - name: Add new Ballerina project with latest version
         run: |
-          cd /home/runner/work/test-19-sep/test-19-sep/test
+          cd /home/runner/work/byor-greetings-app2/byor-greetings-app2/test2
           rm -f bal.deb
           git add *
           git commit -m "Add new Ballerina project"
