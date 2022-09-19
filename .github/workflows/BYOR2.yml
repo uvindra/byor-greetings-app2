@@ -17,6 +17,9 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git rm -r test2
+          git commit -m "Delete existing project from the repository"
+          git push
           
       - name: Build a Ballerina simple service project
         uses: ballerina-platform/ballerina-action@master
