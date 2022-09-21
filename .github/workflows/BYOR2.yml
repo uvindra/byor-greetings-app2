@@ -24,14 +24,14 @@ jobs:
           git fetch
           git checkout feature1
           if [ -d test ]; then
-            git rm -r test
+            git rm -r hello_service
             git commit -m "Deleted existing folder from the repository"
             git push origin feature1
           fi
           
       - name: Build a Ballerina simple service project
         run: |
-          bal new -t service test
+          bal new -t service hello_service
 
       - name: Add new Ballerina project with latest version
         run: |
