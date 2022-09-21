@@ -23,7 +23,7 @@ jobs:
           git config user.email github-actions@github.com
           git fetch
           git checkout feature1
-          if [ -d test ]; then
+          if [ -d hello_service ]; then
             git rm -r hello_service
             git commit -m "Deleted existing folder from the repository"
             git push origin feature1
