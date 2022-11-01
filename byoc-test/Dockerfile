@@ -1,6 +1,7 @@
 FROM node
 WORKDIR /app
 COPY . /app
+RUN ls
 RUN npm install
 USER 10014
 EXPOSE 9090
