@@ -1,6 +1,6 @@
 FROM node
 WORKDIR /app
-COPY . /app
+COPY ${pwd}/ /app
 RUN ls
 RUN npm install
 USER 10014
