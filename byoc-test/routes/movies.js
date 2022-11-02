@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
-    res.status(200).json({ movies })
+    res.status(200).json( movies )
 })
 
 
@@ -16,7 +16,7 @@ router.get('/m', (req, res) => {
         res.status(400).json({ message: `Movie name should provide` })
     } else {
         if (movie) {
-            res.status(200).json({ movie })
+            res.status(200).json( movie )
         }
         res.status(404).json({ message: `Movie with name ${movieName} not found` })
     }
@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
     const id = req.params.id
     const movie = movies.find(m => m.id == id)
     if (movie) {
-        res.status(200).json({ movie })
+        res.status(200).json( movie )
     }
     res.status(404).json({ message: `Movie with ID ${id} not found` })
 })
