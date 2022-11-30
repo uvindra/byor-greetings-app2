@@ -9,7 +9,7 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: choreoanonymouspullable.azurecr.io/choreoipaas/choreo-ballerina-devcontainer:2201.1.2
+      image: choreoanonymouspullable.azurecr.io/choreoipaas/choreo-ballerina-devcontainer:2201.2.3
       options: --user root
     
     steps:
